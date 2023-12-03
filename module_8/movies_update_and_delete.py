@@ -2,13 +2,7 @@ import mysql.connector
 from mysql.connector import errorcode
 from mysql.connector.constants import SQLMode
 
-config = { #Using the movies_user from db_init_2022.sql file
-    "user": "movies_user", 
-    "password": "popcorn",
-    "host": "127.0.0.1",
-    "database": "movies",
-    "raise_on_warnings": True
-}
+
 
 try:
     db = mysql.connector.connect(**config)
